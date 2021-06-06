@@ -1,4 +1,4 @@
-package com.example.yosholimlar.ui.adapters
+package com.example.yosholimlar.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,15 +7,15 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.yosholimlar.R
-import com.example.yosholimlar.ui.models.NewsModel
+import com.example.yosholimlar.models.News
 
-class RicycleViewAdapter(var list: List<NewsModel>):
-    RecyclerView.Adapter<RicycleViewAdapter.MyViewHolder>() {
+class NewsAdapter(var list: List<News>):
+    RecyclerView.Adapter<NewsAdapter.MyViewHolder>() {
     class MyViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val image = view.findViewById<ImageView>(R.id.imageView1)
         val text1 = view.findViewById<TextView>(R.id.text1)
         val text2 = view.findViewById<TextView>(R.id.text1_1)
-        fun bindView(newsModel: NewsModel){
+        fun bindView(newsModel: News){
             image.setImageResource(newsModel.image)
             text1.text = newsModel.text1
             text2.text = newsModel.text2
