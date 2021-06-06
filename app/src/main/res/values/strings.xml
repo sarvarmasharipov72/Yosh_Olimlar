@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Yosh Olimlar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Bosh Sahifa</string>
+    <string name="menu_meetings">Seminarlar</string>
+    <string name="menu_savants">Yosh Olimlar</string>
+    <string name="news_1">31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...</string>
+    <string name="news_2">Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi...</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "844668365770",
+    "project_id": "yosholimlar-b9f53",
+    "storage_bucket": "yosholimlar-b9f53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844668365770:android:458fea667130e3a1cf7d33",
+        "android_client_info": {
+          "package_name": "com.example.yosholimlar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844668365770-m82jh7aqdafhg8rionl3aqdfufm57uj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJM2hCmDWbNLTz96ZwOKtQUhoQwqDQy2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844668365770-m82jh7aqdafhg8rionl3aqdfufm57uj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
