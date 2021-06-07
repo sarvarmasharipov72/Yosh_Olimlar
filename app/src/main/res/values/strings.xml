@@ -12,4 +12,7 @@
     <string name="menu_savants">Yosh Olimlar</string>
     <string name="news_1">31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...</string>
     <string name="news_2">Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi...</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>
