@@ -1,4 +1,4 @@
-package com.example.yosholimlar.ui.slideshow
+package com.example.yosholimlar.ui.scientist
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,9 +10,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.yosholimlar.databinding.FragmentPersonsBinding
 
-class PersonsFragment : Fragment() {
+class ScientistFragment : Fragment() {
 
-    private lateinit var personsViewModel: PersonsViewModel
+    private lateinit var personsViewModel: ScientistViewModel
     private var _binding: FragmentPersonsBinding? = null
 
     // This property is only valid between onCreateView and
@@ -25,15 +25,12 @@ class PersonsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         personsViewModel =
-            ViewModelProvider(this).get(PersonsViewModel::class.java)
+            ViewModelProvider(this).get(ScientistViewModel::class.java)
 
         _binding = FragmentPersonsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textPersons
-        personsViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+
         return root
     }
 

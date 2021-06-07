@@ -1,4 +1,4 @@
-package com.example.yosholimlar.ui.gallery
+package com.example.yosholimlar.ui.meet
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -30,10 +30,7 @@ class MeetingsFragment : Fragment() {
         _binding = FragmentMeetingsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textMeetings
-        meetingsViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+
         return root
     }
 

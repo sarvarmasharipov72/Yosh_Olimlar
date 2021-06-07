@@ -1,4 +1,4 @@
-package com.example.yosholimlar.ui.home
+package com.example.yosholimlar.ui.news
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,7 +11,7 @@ import com.example.yosholimlar.R
 import com.example.yosholimlar.adapters.NewsAdapter
 import com.example.yosholimlar.models.News
 
-class HomeFragment : Fragment() {
+class NewsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
