@@ -15,4 +15,17 @@
     <string name="title_activity_add">AddActivity</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mavzuni_kiriting">Mavzuni kiriting..</string>
+    <string name="rasim_linkini_kiriting">Rasim linkini kiriting..</string>
+    <string name="korfrensiya_linkini_kiriting">Korfrensiya linkini kiriting..</string>
+    <string name="_00_00">00:00</string>
+    <string name="_00_00_0000">00-00-0000</string>
+    <string name="add_meet">Add Meet</string>
+    <string name="yangilik_qo_shish">Yangilik qo\'shish</string>
+    <string name="ismini_kiriting">Ismini kiriting</string>
+    <string name="sohasini_kiriting">Sohasini kiriting..</string>
+    <string name="asosiy_qismini_kiriting">Asosiy qismini kiriting</string>
+    <string name="add">Ma\'lumot qo\'shish</string>
 </resources>

@@ -4,10 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.yosholimlar.adapters.MeetAdapter
 import com.example.yosholimlar.databinding.FragmentMeetingsBinding
 
 class MeetingsFragment : Fragment() {
@@ -29,7 +32,12 @@ class MeetingsFragment : Fragment() {
 
         _binding = FragmentMeetingsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
+        val adapter = MeetAdapter()
+        binding.recyclerMeet.adapter = adapter
+        binding.recyclerMeet.layoutManager = LinearLayoutManager(requireContext())
+        meetingsViewModel.getMeet.observe(viewLifecycleOwner, Observer {
+            adapter.setData(it)
+        })
 
         return root
     }

@@ -41,13 +41,13 @@
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toEndOf="@id/imgMeet"
-        app:layout_constraintTop_toBottomOf="@id/nameMeet"
+        app:layout_constraintTop_toBottomOf="@id/subjectMeet"
         tools:text="19:00" />
     <TextView
         android:id="@+id/dateMeet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/nameMeet"
+        app:layout_constraintTop_toBottomOf="@id/subjectMeet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/timeMeet"
         android:layout_marginTop="10dp"

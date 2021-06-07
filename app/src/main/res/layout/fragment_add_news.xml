@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui2.AddNews"
+    android:paddingTop="20dp">
+
+    <EditText
+        android:id="@+id/nameAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imgAdd"
+        android:textSize="16sp"
+        android:hint="@string/mavzuni_kiriting"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0"
+        android:layout_margin="15dp"/>
+    <EditText
+        android:id="@+id/imgAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nameAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/descriptionAdd"
+        android:textSize="16sp"
+        android:hint="@string/rasim_linkini_kiriting"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_margin="15dp"/>
+    <EditText
+        android:id="@+id/descriptionAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/newsAdd"
+        android:textSize="16sp"
+        android:hint="@string/asosiy_qismini_kiriting"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:lines="15"
+        android:layout_margin="15dp"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/newsAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/descriptionAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:text="@string/yangilik_qo_shish"
+        android:layout_margin="15dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

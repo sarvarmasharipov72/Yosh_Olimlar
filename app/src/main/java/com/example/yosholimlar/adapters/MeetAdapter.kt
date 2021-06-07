@@ -23,7 +23,7 @@ class MeetAdapter: RecyclerView.Adapter<MeetAdapter.MeetHolder>() {
             }
             subjectMeet.text = meet.subject
             timeMeet.text = meet.time
-            dateMeet.text = meet.data
+            dateMeet.text = meet.date
 
         }
     }

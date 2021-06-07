@@ -5,11 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.yosholimlar.R
 import com.example.yosholimlar.adapters.NewsAdapter
-import com.example.yosholimlar.models.News
 
 class NewsFragment : Fragment() {
     override fun onCreateView(
@@ -17,22 +18,15 @@ class NewsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        var list: List<News> =
-            listOf(News(R.drawable.seminar1, "31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...", "Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi..."),
-                News(R.drawable.seminar1, "31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...", "Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi..."),
-                News(R.drawable.seminar1, "31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...", "Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi..."),
-                News(R.drawable.seminar1, "31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...", "Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi..."),
-                News(R.drawable.seminar1, "31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...", "Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi..."),
-                News(R.drawable.seminar1, "31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...", "Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi..."),
-                News(R.drawable.seminar1, "31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...", "Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi..."),
-                News(R.drawable.seminar1, "31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...", "Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi..."),
-                News(R.drawable.seminar1, "31 may kuni Iqtisodiy taraqqiyot va kambag‘allikni qisqartirish vazirligida, vazirning birinchi o‘rinbosari Ilhom Norqulov Birlashgan Millatlar Tashkilotining Bolalar jamg‘armasi (UNICEF) vakillari...", "Uchrashuvning asosiy mavzusi koronavirus pandemiyasining O‘zbekistondagi...")
-        )
-        val adapter = NewsAdapter(list)
-        val ricycleView = root.findViewById<RecyclerView>(R.id.recycler_view)
+        val root = inflater.inflate(R.layout.fragment_news, container, false)
+        val viewModel = ViewModelProvider(this).get(NewsViewModel::class.java)
+        val adapter = NewsAdapter()
+        val ricycleView = root.findViewById<RecyclerView>(R.id.recyclerNews)
         ricycleView.adapter = adapter
         ricycleView.layoutManager = LinearLayoutManager(requireContext())
+        viewModel.getNews.observe(viewLifecycleOwner, Observer {
+            adapter.setData(it)
+        })
         return root
     }
 }
