@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "844668365770",
+    "firebase_url": "https://yosholimlar-b9f53-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "yosholimlar-b9f53",
     "storage_bucket": "yosholimlar-b9f53.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:844668365770:android:458fea667130e3a1cf7d33",
+        "mobilesdk_app_id": "1:844668365770:android:b28281fb594d9b8dcf7d33",
         "android_client_info": {
           "package_name": "com.example.yosholimlar"
         }
