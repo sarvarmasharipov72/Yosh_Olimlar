@@ -1,4 +1,4 @@
-package com.example.yosholimlar.repisitory
+package com.example.yosholimlar.repository
 
 import android.util.Log
 import androidx.lifecycle.LiveData

@@ -1,10 +1,9 @@
 package com.example.yosholimlar.ui.meet
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.yosholimlar.models.Meet
-import com.example.yosholimlar.repisitory.Repository
+import com.example.yosholimlar.repository.Repository
 
 class MeetingsViewModel : ViewModel() {
 

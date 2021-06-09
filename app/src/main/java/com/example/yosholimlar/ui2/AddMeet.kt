@@ -49,7 +49,7 @@ class AddMeet : Fragment(),TimePickerDialog.OnTimeSetListener,DatePickerDialog.O
             setOnClickListener {
                 if (checkData()) {
                     database = FirebaseDatabase.getInstance().reference
-                    var id = database.key
+
                     val user = Meet(
                         date = dateAdd.text.toString(),
                         time = timeAdd.text.toString(),
@@ -57,15 +57,7 @@ class AddMeet : Fragment(),TimePickerDialog.OnTimeSetListener,DatePickerDialog.O
                         subject = nameAdd.text.toString(),
                         img = imgAdd.text.toString()
                     )
-                    database.setValue(user).addOnSuccessListener {
-                            dateAdd.text = "00-00-0000"
-                            timeAdd.text = "00:00"
-                            nameAdd.text.clear()
-                            imgAdd.text.clear()
-                            descriptionAdd.text.clear()
-                    }.addOnFailureListener {
-                        Log.e("eror",it.toString())
-                    }
+                    database.setValue(user)
                 }
 
             }

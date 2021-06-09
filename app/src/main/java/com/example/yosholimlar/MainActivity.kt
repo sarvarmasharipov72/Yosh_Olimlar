@@ -14,6 +14,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.yosholimlar.databinding.ActivityMainBinding
+import com.example.yosholimlar.ui.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.addMenu){
-            startActivity(Intent(applicationContext,MainActivity2::class.java))
+            startActivity(Intent(applicationContext, LoginActivity::class.java))
         }
         return super.onOptionsItemSelected(item)
     }

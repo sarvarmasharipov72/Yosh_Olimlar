@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "844668365770",
-    "firebase_url": "https://yosholimlar-b9f53-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "yosholimlar-b9f53",
-    "storage_bucket": "yosholimlar-b9f53.appspot.com"
+    "project_number": "881999424031",
+    "project_id": "yosh-olimlar-439ba",
+    "storage_bucket": "yosh-olimlar-439ba.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:844668365770:android:b28281fb594d9b8dcf7d33",
+        "mobilesdk_app_id": "1:881999424031:android:f6042b5f7767c09d57032a",
         "android_client_info": {
           "package_name": "com.example.yosholimlar"
         }
       },
       "oauth_client": [
         {
-          "client_id": "844668365770-m82jh7aqdafhg8rionl3aqdfufm57uj9.apps.googleusercontent.com",
+          "client_id": "881999424031-02t04e9gu522aerjob3pfmq83ercvubr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBJM2hCmDWbNLTz96ZwOKtQUhoQwqDQy2M"
+          "current_key": "AIzaSyAeWVD_fe-vS_g1Un2cPGU-uWWJVkEDl2I"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "844668365770-m82jh7aqdafhg8rionl3aqdfufm57uj9.apps.googleusercontent.com",
+              "client_id": "881999424031-02t04e9gu522aerjob3pfmq83ercvubr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
